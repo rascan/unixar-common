@@ -4,7 +4,4 @@ namespace Unixar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DigitalFileType extends Model
-{
-
-}
+class DigitalFileType extends Model {}

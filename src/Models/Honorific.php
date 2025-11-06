@@ -4,8 +4,4 @@ namespace Unixar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Honorific extends Model
-{
-
-}
- 
+class Honorific extends Model {}

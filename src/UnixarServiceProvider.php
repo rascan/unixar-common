@@ -15,9 +15,9 @@ class UnixarServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name('unixar-common');
-            // ->hasConfigFile()
-            // ->hasViews()
-            // ->hasMigration('create_unixar_common_table');
-            // ->hasCommand(ExampleClassCommand::class);
+        // ->hasConfigFile()
+        // ->hasViews()
+        // ->hasMigration('create_unixar_common_table');
+        // ->hasCommand(ExampleClassCommand::class);
     }
 }
