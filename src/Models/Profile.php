@@ -1,0 +1,19 @@
+<?php
+
+namespace Unixar\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+class Profile extends Model
+{
+    public function country(): BelongsTo
+    {
+        return $this->belongsTo(Country::class);
+    }
+
+    public function honorific(): BelongsTo
+    {
+        return $this->belongsTo(Honorific::class);
+    }
+}
