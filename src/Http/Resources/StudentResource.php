@@ -25,6 +25,7 @@ class StudentResource extends JsonResource
             'student_application' => StudentApplicationResource::make($this->whenLoaded('studentApplication')),
             'current_stream' => $this->whenLoaded('streams', function () {
                 $currentStream = $this->streams()->wherePivot('departed_at', null)->first();
+
                 return $currentStream ? StreamResource::make($currentStream) : null;
             }),
         ];
