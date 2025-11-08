@@ -4,14 +4,16 @@ namespace Unixar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Unixar\Models\Traits\Searchable;
 
-class AcademicQualification extends Model
+class AdmissionFee extends Model
 {
-    use Searchable;
-
     public function academicTitle(): BelongsTo
     {
         return $this->belongsTo(AcademicTitle::class);
+    }
+
+    public function institution(): BelongsTo
+    {
+        return $this->belongsTo(Institution::class);
     }
 }

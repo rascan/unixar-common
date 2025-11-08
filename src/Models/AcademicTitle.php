@@ -11,4 +11,19 @@ class AcademicTitle extends Model
     {
         return $this->hasMany(AcademicQualification::class);
     }
+
+    public function admissionFees(): HasMany
+    {
+        return $this->hasMany(AdmissionFee::class);
+    }
+
+    public function courses(): HasMany
+    {
+        return $this->hasMany(Course::class);
+    }
+
+    public function teachingRates(): HasMany
+    {
+        return $this->hasMany(TeachingRate::class);
+    }
 }
